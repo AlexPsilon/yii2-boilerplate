@@ -9,12 +9,22 @@ return [
             'charset' => 'utf8',
         ],
         'mailer' => [
-            'class' => 'yii\swiftmailer\Mailer',
+            'class' => 'zyx\phpmailer\Mailer',
             'viewPath' => '@common/mail',
-            // send all mails to a file by default. You have to set
-            // 'useFileTransport' to false and configure a transport
-            // for the mailer to send real emails.
-            'useFileTransport' => true,
+            'useFileTransport' => false,
+            'config' => [
+                'mailer' => 'mail', // "mail", "sendmail", or "smtp"
+                // 'host' => 'smtp.yandex.ru',
+                // 'port' => '465',
+                // 'smtpsecure' => 'ssl',
+                // 'smtpauth' => true,
+                // 'username' => 'mysmtplogin@example.ru',
+                // 'password' => 'mYsmTpPassword',
+            ],
+            // 'messageConfig'    => [
+            //     'charset' => 'UTF-8',
+            //     'from' => ['mysmtplogin@example.ru' => 'myname'],
+            // ],
         ],
     ],
 ];

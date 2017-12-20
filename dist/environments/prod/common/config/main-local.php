@@ -9,8 +9,22 @@ return [
             'charset' => 'utf8',
         ],
         'mailer' => [
-            'class' => 'yii\swiftmailer\Mailer',
+            'class' => 'zyx\phpmailer\Mailer',
             'viewPath' => '@common/mail',
+            'useFileTransport' => false,
+            'config' => [
+                'mailer' => 'mail', // "mail", "sendmail", or "smtp"
+                // 'host' => 'smtp.yandex.ru',
+                // 'port' => '465',
+                // 'smtpsecure' => 'ssl',
+                // 'smtpauth' => true,
+                // 'username' => 'mysmtplogin@example.ru',
+                // 'password' => 'mYsmTpPassword',
+            ],
+            // 'messageConfig'    => [
+            //     'charset' => 'UTF-8',
+            //     'from' => ['mysmtplogin@example.ru' => 'myname'],
+            // ],
         ],
     ],
 ];

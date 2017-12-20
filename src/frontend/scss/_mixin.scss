@@ -1,0 +1,28 @@
+@mixin link-color($from, $to, $time: $time-hover, $function: 'easy') {
+  &:link,
+  &:visited {
+    color: $from;
+    transition: color $time $function;
+  }
+
+  &:hover,
+  &:active {
+    color: $to;
+  }
+}
+
+@mixin font-regular {
+  font-family: 'RobotoRegular';
+}
+
+@mixin font-light {
+  font-family: 'RobotoLight';
+}
+
+@mixin font-medium {
+  font-family: 'RobotoMedium';
+}
+
+@mixin font-bold {
+  font-family: 'RobotoBold';
+}

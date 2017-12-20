@@ -1,0 +1,23 @@
+{
+  "name": "psilon/yii2-boilerplate",
+  "description": "Yii2 application advanced, build frontend with webpack",
+  "keywords": ["yii2", "boilerplate", "webpack"],
+  "type": "project",
+  "license": "BSD-3-Clause",
+  "authors": [
+    {
+      "name": "Psilon",
+      "email": "alexpsilon@gmail.com"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/AlexPsilon/yii2-boilerplate.git"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=5.4.0"
+  }
+}
